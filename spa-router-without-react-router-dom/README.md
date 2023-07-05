@@ -140,4 +140,5 @@ export default useRouter;
 `useRouter` 커스텀 훅의 핵심은 `window.dispatchEvent(new Event("popstate"))` 부분인데 이 코드를 추가한 이유는 `pushState` 이벤트는 클릭, 뒤로가기, 앞으로 가기 이벤트를 제외하면 `popstate`를 trigger하지 않기 때문에 `popstate` 이벤트를 구독하고 있는 Context의 path state를 업데이트 하기 위해 반드시 필요한 부분입니다.
 
 > Note that just calling history.pushState() or history.replaceState() won't trigger a popstate event. The popstate event will be triggered by doing a browser action such as a click on the back or forward button (or calling history.back() or history.forward() in JavaScript).
+>
 > 💡 [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event#the_history_stack)
