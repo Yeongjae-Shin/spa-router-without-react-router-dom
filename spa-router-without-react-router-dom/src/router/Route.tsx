@@ -1,12 +1,17 @@
-import React, { ComponentType, ReactElement, useContext } from "react";
+import React, {
+  ComponentType,
+  ReactElement,
+  createElement,
+  useContext,
+} from "react";
 import RouterContext from "./RouterContext";
 
 interface RouteProps {
   path: string;
-  component: ReactElement | ComponentType;
+  component: ReactElement | ComponentType<any>;
 }
 
-function Route({ path, component: Component }: RouteProps) {
+const Route = ({ path, component: Component }: RouteProps) => {
   const router = useContext(RouterContext);
 
   if (!router) {
@@ -17,7 +22,7 @@ function Route({ path, component: Component }: RouteProps) {
     return null;
   }
 
-  return typeof Component === "function" ? <Component /> : Component;
-}
+  return typeof Component === "function" ? createElement(Component) : Component;
+};
 
 export default Route;
