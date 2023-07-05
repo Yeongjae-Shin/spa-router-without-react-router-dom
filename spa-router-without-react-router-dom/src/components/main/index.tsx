@@ -1,6 +1,6 @@
 import { useRouter } from "@/hooks";
 
-function Main() {
+const Main = () => {
   const history = useRouter();
 
   return (
@@ -11,6 +11,6 @@ function Main() {
       </div>
     </>
   );
-}
+};
 
 export default Main;
