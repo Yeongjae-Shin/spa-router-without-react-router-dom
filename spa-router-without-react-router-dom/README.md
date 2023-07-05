@@ -1,5 +1,9 @@
 # 원티드 프리온보딩 1주차 과제
 
+## 사전 과제 3번 문제 보강해서 블로그에 작성하기
+
+- [Link](https://velog.io/@syj9484/Next.js-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-yarn-start-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EC%8B%A4%ED%96%89%ED%96%88%EC%9D%84-%EB%95%8C-%EC%96%B4%EB%96%A4%EC%9D%BC%EC%9D%B4-%EC%83%9D%EA%B8%B8%EA%B9%8C)
+
 ## React와 History API 사용하여 SPA Router 기능 구현하기
 
 #### 조건1. 해당 주소로 진입했을 때 아래 주소에 맞는 페이지가 렌더링 되어야 한다.
